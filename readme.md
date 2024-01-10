@@ -35,3 +35,30 @@ $$\begin{bmatrix}
    c_x \\
    c_y 
 \end{bmatrix}$$
+
+$$\begin{bmatrix}
+   x_u \\
+   y_u \\
+\end{bmatrix}=\begin{bmatrix}
+   a & b & c_x \\
+   c & d & c_y \\
+\end{bmatrix}\begin{bmatrix}
+   x_m \\
+   y_m \\
+   1 \\ 
+\end{bmatrix}$$
+
+$$\begin{bmatrix}
+   x_u \\
+   y_u \\
+\end{bmatrix}=\begin{bmatrix}
+   x_m & y_m & 0 & 0 & 1 & 0 \\
+   0 & 0 & x_m & y_m & 0 & 1 \\
+\end{bmatrix}\begin{bmatrix}
+   a \\
+   b \\
+   c \\
+   d \\
+   c_x \\
+   c_y 
+\end{bmatrix}$$
