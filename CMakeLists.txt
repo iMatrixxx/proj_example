@@ -12,7 +12,7 @@ find_package(Eigen3 REQUIRED)
 
 set(src_files
   "example.cpp"
-  "src/coordinate_trans.cpp"
+  # "src/coordinate_trans.cpp"
 )
 
 
