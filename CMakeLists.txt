@@ -9,6 +9,8 @@ include_directories(proj)
  
 find_package(PROJ)
 find_package(Eigen3 REQUIRED)
+find_package(OpenCV REQUIRED)
+
 
 set(src_files
   "example.cpp"
@@ -24,3 +26,17 @@ target_include_directories(proj_example
 
 )
 target_link_libraries(proj_example ${PROJ_LIBRARIES})
+
+include_directories(
+    ./
+    ./include
+    ${OpenCV_INCLUDE_DIRS}
+    ${EIGEN3_INCLUDE_DIRS}
+)
+
+set(test_stitch_image_files
+    "stictch_image/stitch_image.cpp"
+)
+
+add_executable(test_stitch_image ${test_stitch_image_files})
+target_link_libraries(test_stitch_image ${OpenCV_LIBS})
